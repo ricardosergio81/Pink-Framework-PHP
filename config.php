@@ -1,19 +1,25 @@
 <?php
+
 /**
  * Configuration for database 
  *
  */
-$host       = "localhost";
-$username   = "root";
-$password   = "root";
-$dbname     = "test";
-$dsn        = "mysql:host=$host;dbname=$dbname";
-$options    = array(
-                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-              );
+$host = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "test";
 
 /**
-* Configuration for languages
-*
-*/
+ * Configuration for languages
+ *
+ */
 $language = "pt_br";
+
+
+/**
+ * Auto load
+ */
+require_once 'helpers/languages.php';
+$languages = new Languages($language);
+
+

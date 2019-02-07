@@ -1,0 +1,14 @@
+{
+   "name": "ricardosergio81/cadastro_basico",
+   "description": "Cadastro basico de pessoas.",
+   "authors": [
+      {
+         "name": "Ricardo Rosa",
+         "email": "ricardosergio81@gmail.com"
+      }
+   ],
+   "require": {
+      "components/jquery": "^3.2",
+      "twbs/bootstrap": "4.0.0"
+   }
+}

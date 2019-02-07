@@ -1,3 +1,3 @@
 <?php
 
-$language['PAGE_TITLE'] = 'Cadastro de Pessoas';
+$lang['PAGE_TITLE'] = 'Cadastro de Pessoas';
