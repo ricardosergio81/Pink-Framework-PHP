@@ -1,9 +1,16 @@
 <?php
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-require_once 'config.php';
+include_once 'config.php';
 
-echo $languages->get('PAGE_TITLE');
+require_once './views/header.php';
+?>
+
+<ul>
+    <li><a href="user.php"><?php echo $languages->get('USER_LINK'); ?></a></li>
+</ul>
+
+<?php
+require_once './views/footer.php';
