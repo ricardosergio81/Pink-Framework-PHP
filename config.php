@@ -4,10 +4,10 @@
  * Configuration for database 
  *
  */
-$host = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "test";
+$db_config['hostname'] = 'localhost';
+$db_config['username'] = 'root';
+$db_config['password'] = '';
+$db_config['database'] = 'mysql';
 
 /**
  * Configuration for languages
