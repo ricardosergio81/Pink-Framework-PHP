@@ -5,12 +5,26 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 include_once 'config.php';
-include_once './helpers/db_mysql_pdo.php';
+#include_once './helpers/db_mysql_pdo.php';
 
-$obj_db_mysql_pdo = new db_mysql_pdo($db_config);
-var_dump($obj_db_mysql_pdo->query('show variables'));
+include_once './sys/pink.php';
 
+new Core();
+
+$pink = get_instance();
+
+$pink->database = database();
+var_dump($pink);
+
+$pink->database->query("show variables");
 exit;
+
+
+
+
+#$obj_db_mysql_pdo = new db_mysql_pdo($db_config);
+#var_dump($obj_db_mysql_pdo->query('show variables'));
+#exit;
 $requestUrl = $pref . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 $requestString = substr($requestUrl, strlen($base_url));
 

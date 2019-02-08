@@ -1,11 +1,14 @@
 <?php
 
-class Languages {
+class Lang {
 
     private $language = array();
 
-    function __construct($language) {
+    function __construct() {
+        
+    }
 
+    function load($language) {
         $langFile = 'languages/' . $language . '/default.php';
 
         if (!file_exists($langFile)) {
