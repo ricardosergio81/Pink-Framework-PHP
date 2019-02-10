@@ -18,8 +18,12 @@ class Fist_page extends Core {
     }
 
     function index() {
+        $this->load('database');
         echo 'Index Default';
+        echo '<br>';
         var_dump($this);
+        
+        $this->db->query("show variables");
     }
 
 }

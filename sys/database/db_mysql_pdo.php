@@ -2,11 +2,11 @@
 
 class db_mysql_pdo {
 
-    var $instance;
-    var $username;
-    var $password;
-    var $hostname;
-    var $database;
+    private $instance;
+    private $username;
+    private $password;
+    private $hostname;
+    private $database;
 
     function __construct($params) {
         if (is_array($params)) {

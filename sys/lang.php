@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Pink Framework
+ * Created by ricardosergio81
+ * Language class
+ */
 class Lang {
 
     private $language = array();

@@ -1,9 +1,9 @@
 <?php
 
-class user {
+class User extends Core {
 
     function __construct() {
-        
+        parent::__construct();
     }
 
     function index() {
@@ -18,11 +18,11 @@ class user {
     function exe_creat() {
         
     }
-    
+
     function alter() {
         
     }
-    
+
     function exe_alter() {
         
     }
