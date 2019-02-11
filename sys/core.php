@@ -13,7 +13,7 @@ class Core {
         self::$instance = & $this;
 
         foreach (is_loaded() as $key => $value) {
-            $this->$key = & loadClasses($value);
+            $this->$key = & load_classes($value);
         }
     }
 

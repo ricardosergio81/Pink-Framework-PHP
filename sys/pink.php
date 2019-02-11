@@ -5,7 +5,6 @@
  * Created by ricardosergio81
  * 
  */
-
 define('PINK_VERSION', '1.0.0');
 
 /**
@@ -16,8 +15,7 @@ require_once BASEDIR . 'sys/common.php';
 /**
  * Default language
  */
-require_once BASEDIR . 'sys/lang.php';
-loadClasses('lang');
+load_classes('lang');
 
 /**
  * Start code o  pink framework
@@ -43,13 +41,13 @@ $action = strtolower(array_shift($urlParams));
 $action = $action != "" ? $action : 'index';
 
 if (!file_exists(BASEDIR . 'controllers/' . $controller . '.php')) {
-    echo 'ERROR_CONTROLLER_DOES_NOT_EXIST';
+    show_error('Controller does not exist');
 } else {
     include BASEDIR . 'controllers/' . $controller . '.php';
     $controller = new $controller();
 
     if (!method_exists($controller, $action)) {
-        echo 'ERROR_CONTROLLER_ACTION_DOES_NOT_EXIST';
+        show_error('Action of controller does not exist');
     } else {
         $controller->$action();
     }
