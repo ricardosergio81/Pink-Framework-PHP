@@ -22,8 +22,8 @@ class Fist_page extends Core {
         echo 'Index Default';
         echo '<br>';
         var_dump($this);
-        
-        $this->db->query("show variables");
+
+        var_dump($this->db->query("show variables"));
     }
 
 }

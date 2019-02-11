@@ -1,22 +1,5 @@
 <?php
 
-try {
-  $conn = new PDO('mysql:host=127.0.0.1;dbname=mysql', 'root', '12345');
-   # $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch(PDOException $e) {
-    echo 'ERROR: ' . $e->getMessage();
-}
-
-
-
-
-
-
-
-exit;
-
-
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
