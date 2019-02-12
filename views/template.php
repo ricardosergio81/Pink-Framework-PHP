@@ -2,6 +2,9 @@
 <html> 
     <head> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title><?php echo $languages->get('PAGE_TITLE'); ?></title>
+        <title>Pink</title>
     </head> 
     <body>
+        {contents}
+    </body>
+</html>
