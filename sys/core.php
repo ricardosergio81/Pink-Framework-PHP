@@ -22,8 +22,13 @@ class Core {
         return self::$instance;
     }
 
-    function load($class) {
-        if ($class == 'database') {
+    function load($class, $type = 'sys') {
+        if ($type == 'model') {
+            load_classes('model');
+
+            require_once BASEDIR . 'model/' . $class . '.php';
+            $this->$class = new $class();
+        } else if ($class == 'database') {
             require_once(BASEDIR . 'config/database.php');
             require_once BASEDIR . 'sys/database/db_mysql_pdo.php';
             $this->db = new db_mysql_pdo($db_config);

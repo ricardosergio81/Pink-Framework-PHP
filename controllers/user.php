@@ -8,6 +8,8 @@ class User extends Core {
 
     function index() {
         echo 'index';
+        $this->load('user_model', 'model');
+        $this->user_model->getUser();
     }
 
     function creat() {
