@@ -35,7 +35,7 @@ $requestString = substr($requestUrl, strlen($base_url));
 $urlParams = explode('/', $requestString);
 
 $controller = strtolower(array_shift($urlParams));
-$controller = $controller != "" ? $controller : "fist_page";
+$controller = $controller != "" ? $controller : $defaultpage;
 
 $action = strtolower(array_shift($urlParams));
 $action = $action != "" ? $action : 'index';

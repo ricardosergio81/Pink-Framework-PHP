@@ -16,6 +16,10 @@ $base_url .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT
  */
 $language = "pt_br";
 
+/**
+ * Set default page
+ */
+$defaultpage = "helloworld";
 
 define('BASEDIR', str_replace('index.php', '', __FILE__));
 
